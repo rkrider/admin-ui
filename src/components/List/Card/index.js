@@ -16,10 +16,13 @@ function Card({
 }) {
   const [edit, setEdit] = useState(false);
 
-  console.log({selectedRows});
   return (
     <>
-      <tr className={` ${styles.row} ${selectedRows.has(item?.id) ? styles.selected : null}`} >
+      <tr
+        className={` ${styles.row} ${
+          selectedRows.has(item?.id) ? styles.selected : null
+        }`}
+      >
         <td>
           <input
             type="checkbox"

@@ -23,7 +23,6 @@ function EditForm({
       ...prev.map((itm) => (itm?.id === formData?.id ? formData : itm)),
     ]);
     setEdit(false);
-    console.log(formData);
   };
 
   return (

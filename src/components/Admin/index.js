@@ -100,8 +100,6 @@ function Admin() {
     setPaginationData(filteredData.slice(0, 10)); // Update paginationData
   };
 
-  console.log({filteredData})
-
   return (
     <>
       <Header setQ={handleFilter} q={q}></Header>
